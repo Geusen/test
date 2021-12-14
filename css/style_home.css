@@ -92,13 +92,15 @@ li.main {
 
 ul.sub {
   position: absolute;
-  bottom: -124px;
+  bottom: -344px;
   left: -14px;
   display: none;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   margin-left: 14px;
   width: 120px;
   background: #e4f4fc;
+  z-index: 100;
 }
 
 li.sub {
@@ -110,10 +112,16 @@ li.sub {
 
 li.sub:hover {
   color: black;
-  background: #f6fbfe;
-  width: 160px;
   position: relative;
   right: 40px;
+  background: #f6fbfe;
+  width: 160px;
+  z-index: 100;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -o-transition: 0.15s;
+  -ms-transition: 0.15s;
+  transition: 0.15s;
 }
 
 a.sub {
@@ -143,11 +151,64 @@ nav.side_menu {
   background: hsla(193, 39%, 58%, 0.72);
 }
 
+#back {
+  margin: 0px;
+  display: block;
+  position: relative;
+  right: 5px;
+  bottom: 5px;
+  width: 210px;
+  height: 40px;
+  padding-top: 10px;
+  background: hsla(193, 39%, 45%, 0.72);
+}
+
+#side_menu {
+  margin: 0px;
+}
+
+#side_sub {
+  text-indent: 1em;
+}
+
+a.side_btn {
+  text-indent: 0.5em;
+  margin: 0px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  position: relative;
+  right: 5px;
+  bottom: 5px;
+  display: flex;
+}
+
+a.side_btn:hover {
+  text-indent: 0.5em;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  background: #f6fbfe;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-right: 140px;
+  white-space: nowrap;
+  position: relative;
+  right: 5px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+
 div.home{
   display: block;
   padding: 5px;
   max-width: 880px;
-  width: 80%;
+  width: 77.6%;
   height: 1000px;
   margin-left: 410px;
   background: white;
@@ -157,6 +218,7 @@ h1 {
   margin: 10px;
   margin-left: 0px;
   font-size: 150%;
+  background: linear-gradient(transparent 60%, #d1e8ff 60%);
 }
 
 h2 {
